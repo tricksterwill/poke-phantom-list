@@ -1,0 +1,130 @@
+body {
+    font-family: 'poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #a8a8a8;
+    color: #333333;
+}
+
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+
+header .logo,
+
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+main {
+    padding: 25px;
+}
+
+.listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.cartao-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #4B0082;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+    ;
+
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+
+.fantasma {
+    background-color: #4B0082;}
+
+.veneno {
+    background-color: #8B008B}
+
+.fogo {
+    background-color: #FF7F50;}
+
+.dragao {
+    background-color: #4169E1;}
+
+.fada {
+    background-color: #EE82EE;}
+
+.grama {
+    background-color:#00FF00;}
+
+.metal{
+    background-color: #778899;}
+
+.terrestre{
+    background-color:#B8860B;}
+
+main .descricao {
+    max-height: 150px;
+    overflow-y: scroll;
+    font-size: 15px;
+    padding-right: 10px;}
+
